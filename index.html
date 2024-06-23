@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- HTML5 Convention -->
+  <meta charset="utf-8"/>
+  <title>A Markdown Previewer: From Ian Robinson as part of Free Code Camp Ciriculum</title>
+
+  <!-- CSS styling specific to this webpage -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- Marked CDN connection and link to Marked JS script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.15/marked.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <center><h1>GitHub Markdown Previewer</h1></center>
+  </header>
+  <div class="containers">
+    
+    <!-- Input Container -->
+    <div class="container">
+      <div class="label">
+        <span>Input</span>
+        <button id="clear">Clear</button>
+      </div>
+      <textarea id="input"></textarea>
+    </div>
+    
+    <!-- Output Container -->
+    <div class="container">
+      <div class="label">
+        <span>Output</span>
+        <select id="outputType">
+          <option value="GitHub">GitHub Markdwon</option>
+          <option value="html">HTML</option>
+        </select>
+      </div>
+      <div id="preview" class="pane" style="display: block;"></div>
+      <textarea id="input"></textarea>
+    </div>
+  </div>
+  
+  <!-- Marked Test Script and DOM Element -->
+  <!-- <div id="content"></div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    document.getElementById('content').innerHTML =
+      marked('# Marked in the browser\n\nRendered by **marked**.');
+  </script> -->
+
+</body>
+</html>
+
